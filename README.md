@@ -1,13 +1,23 @@
 # IniParser (CSharp)
 IniParser for .NET applications. 
+The parser is **not** case-sensitive. 
 
 ###### Constructors: 
 - **IniParser**() *(Opens [ApplicationName].ini)*
 - **IniParser**(string FilePath) *(Opens files from given filepath)*
 
+###### Properties: 
+- string **Title**; *(File name without extension)*
+- string **FilePath**; *(Full file path)*
+- IniData[] **Items**; *(Keys read from file)*
+- CultureInfo **Culture**; *(CultureInfo used for string conversions. Default value: **CultureInfo.InvariantCulture**. Do not set if not sure)*
+- char **CommentCharacter**; *(Character indicator for comment lines. Default value: **'#'**)*
+
+
+
 ###### Indexing: 
-- IniParserInstance**["Section", "Key"]** *(Retrieves Key based on Section and Key value.)*
-- IniParserInstance**["Key"]** *(Retrieves first Key found on any of the Sections. Use with caution and only if sure that there are no duplicates.)*
+- **IniParserInstance["Section", "Key"]**; *(Retrieves Key based on Section and Key value)*
+- **IniParserInstance["Key"]**; *(Retrieves first Key found on any of the Sections. Use with caution and only if sure that there are no duplicates)*
 
 ###### General methods: 
 - void IniParserInstance.**Load()**; *(Loads file from the given file path. It is automatically called in Constructor)*
