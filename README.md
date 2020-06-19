@@ -1,6 +1,6 @@
 # IniParser (CSharp)
-IniParser for .NET applications. 
-The parser is **not** case-sensitive. 
+IniParser for .NET applications.  
+The parser is **not** case-sensitive.  
 
 ###### Constructors: 
 - **IniParser**() *(Opens [ApplicationName].ini)*
@@ -23,7 +23,7 @@ The parser is **not** case-sensitive.
 - void IniParserInstance.**Load()**; *(Loads file from the given file path. It is automatically called in Constructor)*
 - void IniParserInstance.**Flush**(); *(Writes content to file. It is automatically called on Disposal)*
 - void IniParserInstance.**Refresh**(); *(Calls **Load** and **Flush**)*
-- void IniParserInstance.**SaveTo**(string FilePath); *(Saves file to different location.)*
+- void IniParserInstance.**SaveTo**(string FilePath); *(Saves file to different location)*
 - string IniParserInstance.**ToString**(); *(Gets string content)*
 
 ###### Section methods: 
@@ -47,7 +47,7 @@ class Program
         //Dispoing the object saves changes back to file 
         using (var ini = new IniParser())
         {
-            //If Key is not found while indexing, create one 
+            //If Key is not found while indexing, create a new one 
             ini.AutoCreateKeys = true;
             
             //Read values using indeces (int, decimal, bool, string) 
