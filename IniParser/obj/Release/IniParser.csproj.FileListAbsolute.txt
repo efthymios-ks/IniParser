@@ -1,0 +1,7 @@
+C:\Users\Efthymios\Desktop\IniParser\bin\Release\IniParser.xml
+C:\Users\Efthymios\Desktop\IniParser\bin\Release\IniParser.dll
+C:\Users\Efthymios\Desktop\IniParser\bin\Release\IniParser.pdb
+C:\Users\Efthymios\Desktop\IniParser\obj\Release\IniParser.csproj.CoreCompileInputs.cache
+C:\Users\Efthymios\Desktop\IniParser\obj\Release\IniParser.dll
+C:\Users\Efthymios\Desktop\IniParser\obj\Release\IniParser.pdb
+C:\Users\Efthymios\Desktop\IniParser\obj\Release\IniParser.csprojAssemblyReference.cache

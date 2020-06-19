@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IniParser</name>
+    </assembly>
+    <members>
+        <member name="P:SharpUtilities.IniParser.Item(System.String)">
+            <summary>
+            Returns FirstOrDefault Key with matching name. 
+            Does not check Section. Use carefully. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.Item(System.String,System.String)">
+            <summary>
+            Returns specific Key. 
+            If Key is missing and AutoCreateKey = true, then it is created. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.KeyExists(System.String)">
+            <summary>
+            Check if key exists in any section available. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.KeyExists(System.String,System.String)">
+            <summary>
+            Check if key exists. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.DeleteKeys(System.String)">
+            <summary>
+            Delete matching keys in any section. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.DeleteKey(System.String,System.String)">
+            <summary>
+            Delete key. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.ParseFile(System.String)">
+            <summary>
+            Parse file to list of IniData. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.LineIsSection(System.String)">
+            <summary>
+            Check if line is [Section] 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.LineIsSectionBracket(System.String,System.String)">
+            <summary>
+            Check if line is section bracket. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.LineIsComment(System.String,System.Char)">
+            <summary>
+            Check if line is #Comment. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.LineIsVariable(System.String)">
+            <summary>
+            Check if line is variable entry. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.GetSectionName(System.String)">
+            <summary>
+            Get [Section] name. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.GetCommentContent(System.String,System.Char)">
+            <summary>
+            Get #Comment content. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.SplitLineVariableFields(System.String)">
+            <summary>
+            Split line variable to fields. 
+            Key = Value 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.GetRealValue(System.String)">
+            <summary>
+            Converts string to real value (int, decimal, bool or string). 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.Load">
+            <summary>
+            Read data from file. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.Flush">
+            <summary>
+            Write data to file. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.Refresh">
+            <summary>
+            Flushes data to file and reads data back from file. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.SaveTo(System.String)">
+            <summary>
+            Save to specific file path. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.Title">
+            <summary>
+            Get ini file title. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.FilePath">
+            <summary>
+            File path. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser._items">
+            <summary>
+            Entries read from file. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.Culture">
+            <summary>
+            CultureInfo for variables. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.AutoCreateKeys">
+            <summary>
+            Create keys if they do not exist. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.CommentCharacter">
+            <summary>
+            Character to indicate comment line. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.SectionSplitterCharacter">
+            <summary>
+            Section delimiter starts with "===". 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniParser.SectionSplitterStart">
+            <summary>
+            Section spliter start "#===". 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.GetSections">
+            <summary>
+            Get sections' name. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.SectionExists(System.String)">
+            <summary>
+            Check if exists. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.RenameSection(System.String,System.String)">
+            <summary>
+            Rename section. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.IniParser.DeleteSection(System.String)">
+            <summary>
+            Delete section. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniData.Section">
+            <summary>
+            Variable section. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniData.Comment">
+            <summary>
+            Variable comment. Only one line allowed. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniData.Key">
+            <summary>
+            Variable name. 
+            </summary>
+        </member>
+        <member name="P:SharpUtilities.IniData.Value">
+            <summary>
+            Variable value. 
+            </summary>
+        </member>
+        <member name="T:SharpUtilities.LinqExtensions">
+            <summary>
+            Linq extensions. 
+            </summary>
+        </member>
+        <member name="T:SharpUtilities.StringBuilderExtensions">
+            <summary>
+            StringBuilder extensions.
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.StringBuilderExtensions.AppendFormatLine(System.Text.StringBuilder,System.String,System.Object[])">
+            <summary>
+            Append format + new line. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.StringBuilderExtensions.AppendFormatLine(System.Text.StringBuilder,System.Globalization.CultureInfo,System.String,System.Object[])">
+            <summary>
+            Append format + new line. 
+            </summary>
+        </member>
+        <member name="T:SharpUtilities.StringExtensions">
+            <summary>
+            String extensions.
+            </summary>
+        </member>
+        <member name="T:SharpUtilities.GenericExtensions">
+            <summary>
+            Generic extensions. 
+            </summary>
+        </member>
+        <member name="M:SharpUtilities.GenericExtensions.IsIn``1(``0,``0[])">
+            <summary>
+            Check if value is contained in list. 
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+C:\Users\Efthymios\Desktop\IniParser\bin\Debug\IniParser.dll
+C:\Users\Efthymios\Desktop\IniParser\bin\Debug\IniParser.pdb
+C:\Users\Efthymios\Desktop\IniParser\obj\Debug\IniParser.csproj.CoreCompileInputs.cache
+C:\Users\Efthymios\Desktop\IniParser\obj\Debug\IniParser.dll
+C:\Users\Efthymios\Desktop\IniParser\obj\Debug\IniParser.pdb
