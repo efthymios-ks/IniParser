@@ -2,8 +2,8 @@
 IniParser for .NET applications. 
 
 ###### Parser methods: 
-- IniParser() *(Opens [ApplicationName].ini)*
-- IniParser(string FilePath) *(Opens files from given filepath)*
+- **IniParser**() *(Opens [ApplicationName].ini)*
+- **IniParser**(string FilePath) *(Opens files from given filepath)*
 
 - void IniParserInstance.**Load()**; *(Loads file from the given file path. It is also automatically called in Constructor)*
 - void IniParserInstance.**Flush**(); *(Writes content to file. It is also automatically called on Dispose)*
